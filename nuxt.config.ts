@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  css: ['~/assets/css/tailwind.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -12,7 +13,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     'nuxt-icon',
     "@nuxtjs/tailwindcss",
-    "shadcn-nuxt"
+    "shadcn-nuxt",
+    "@nuxt/ui"
   ],
   image:{
     /* ... */
